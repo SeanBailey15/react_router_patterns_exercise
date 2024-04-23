@@ -1,14 +1,15 @@
-import { Link, useParams, } from "react-router-dom";
 import NavBarDogs from "./NavBarDogs";
 
-const Dogs = ({dogs}) => {
-    const params = useParams()
+const Dogs = (props) => {
+    const { dogs } = props.dogs
 
     return (
         <>
-            <NavBarDogs />
-            <h1>Dogs</h1>
-            {dogs.dogs.map(({name}) => <h2>{name}</h2>)}
+            <NavBarDogs dogs={dogs}/>
+            <div className="Dogs">
+                <h1>Learn About Our Furry Friends!</h1>
+                <h2>Click A Link In The NavBar To Learn More</h2>
+            </div>
         </>
     )
 }

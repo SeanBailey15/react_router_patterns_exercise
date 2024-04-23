@@ -1,13 +1,14 @@
 import { NavLink } from "react-router-dom"
 import "./styles/NavBar.css"
 
-const NavBar = () => {
+const NavBarColors = () => {
     return (
         <nav className="NavBar-colors">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/dogs">Colors</NavLink>
+            <NavLink className="NavBar-colors-main" to="/">Home</NavLink>
+            <NavLink className="NavBar-colors-main" to="/colors">Colors</NavLink>
+            <NavLink className="NavBar-colors-add" to="/colors/add">Add A Color</NavLink>
         </nav>
     )
 }
 
-export default NavBar
+export default NavBarColors

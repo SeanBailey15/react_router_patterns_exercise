@@ -1,13 +1,33 @@
 .NavBar-dogs {
-  display: flex;
+  display: flexbox;
   background-color: orange;
   padding: 1em;
 }
 
+.NavBar-dogs-main {
+  margin-right: 1em;
+}
+
+.NavBar-dogs-link-group {
+  float: right;
+}
+
+.NavBar-dogs-link {
+  margin-left: 1em;
+}
+
 .NavBar-colors {
-  display: flex;
+  display: flexbox;
   background-color: lightskyblue;
   padding: 1em;
+}
+
+.NavBar-colors-main {
+  margin-left: 1em;
+}
+
+.NavBar-colors-add {
+  float: right;
 }
 
 nav a.active {
@@ -19,6 +39,5 @@ nav a.active {
 nav a {
   text-decoration: none;
   font-size: larger;
-  margin-right: 1em;
   color: rgb(61, 61, 61);
 }

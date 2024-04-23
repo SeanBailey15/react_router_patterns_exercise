@@ -1,7 +1,9 @@
 import { Routes, Route} from 'react-router-dom'
 import Home from './Home'
 import Dogs from './Dogs'
+import DogDetails from './DogDetails'
 import ErrorPage from './ErrorPage'
+import ColorList from './ColorList'
 
 
 const App = () => {
@@ -9,7 +11,9 @@ const App = () => {
     <>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path='dogs' element={<Dogs dogs={App.defaultProps}/>} />
+      <Route path='/dogs' element={<Dogs dogs={App.defaultProps}/>} />
+      <Route path='/colors' element={<ColorList />} />
+      <Route path='/dogs/:src' element={<DogDetails dogs={App.defaultProps} />} />
       <Route path='*' element={<ErrorPage />} />
     </Routes>
     </>
