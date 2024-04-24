@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import './styles/Home.css'
-import NavBar from "./NavBarDogs";
 
 const Home = () => {
     return (
@@ -21,6 +19,7 @@ const Home = () => {
                 </div>
                 <div className="Home-colors">
                     <p className="Home-colors-text">Click Below For Part 2 Of The Exercise</p>
+                    <p className="Home-colors-text">**This part of the exercise is unfinished**</p>
                     <button className="Home-colors-btn">
                         <Link to="/colors"
                             style={{textDecoration: 'none',

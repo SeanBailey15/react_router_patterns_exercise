@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom"
+import { v4 as uuid } from "uuid"
 import "./styles/NavBar.css"
 
 const NavBarDogs = ({dogs}) => {
@@ -8,7 +9,7 @@ const NavBarDogs = ({dogs}) => {
             <NavLink className="NavBar-dogs-main" to="/dogs">Dogs</NavLink>
             <div className="NavBar-dogs-link-group">
             {dogs.map((dog) => 
-                <NavLink className="NavBar-dogs-link" to={`/dogs/${dog.src}`}>{dog.name}</NavLink>
+                <NavLink key={uuid()}  className="NavBar-dogs-link" to={`/dogs/${dog.src}`}>{dog.name}</NavLink>
             )}
             </div>
         </nav>

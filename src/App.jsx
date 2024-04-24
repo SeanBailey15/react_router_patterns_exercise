@@ -5,15 +5,14 @@ import DogDetails from './DogDetails'
 import ErrorPage from './ErrorPage'
 import ColorList from './ColorList'
 
-
 const App = () => {
   return (
     <>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path='/dogs' element={<Dogs dogs={App.defaultProps}/>} />
-      <Route path='/colors' element={<ColorList />} />
       <Route path='/dogs/:src' element={<DogDetails dogs={App.defaultProps} />} />
+      <Route path='/colors' element={<ColorList />} />
       <Route path='*' element={<ErrorPage />} />
     </Routes>
     </>
